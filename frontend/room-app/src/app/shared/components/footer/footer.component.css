@@ -1,0 +1,16 @@
+.color-footer {
+    background-color: #82E0AA;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #0E6655;
+}

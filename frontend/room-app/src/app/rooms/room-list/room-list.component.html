@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="filter-margin-top">
+        <label class="col-sm-2 col-form-label">Filter By</label>
+        <div class="col-sm-6">
+            <input [(ngModel)]="filter" class="form-control"/>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="page-title">Room List</h1>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Start Hour</th>
+                        <th>End Hour</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let room of rooms">
+                        <td>{{room.name}}</td>
+                        <td>{{room.date | date: 'dd/MM/yyyy'}}</td>
+                        <td>{{room.startHour}}</td>
+                        <td>{{room.endHour}}</td>
+                        <td>
+                            <button class="btn btn-info" (click)="editRoom(room.id)">Edit</button>
+                            <button class="btn-margin-left btn btn-secondary" (click)="roomDetails(room.id)">Details</button>
+                            <button class="btn-margin-left btn btn-danger" (click)="deleteRoom(room.id)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
