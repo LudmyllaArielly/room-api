@@ -1,5 +1,5 @@
 # Room Api
-*Aplicação de gerenciamento de salas de reuniões construído com bootcamp Santander, no qual produzimos o backend e frontend do projeto*
+*Aplicação de gerenciamento de salas de reuniões*
 
 ## Tecnologias usadas
 - Spring framework
